@@ -33,10 +33,6 @@ application:
       MYSQL_USER: pixelfed
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-    volumes:
-    - name: pixelfed-db
-      mountPath: /var/lib/mysql
-      size: 5Gi
   - name: redis
     image: redis:7-alpine
     servicePorts:
